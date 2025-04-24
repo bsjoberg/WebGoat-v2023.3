@@ -8,7 +8,8 @@ jobs:
   generate-report:
     runs-on: ubuntu-latest
     steps:
-      - name: CodeQL and Dependabot Report Action
-        uses: rsdmike/github-security-report-action@v3.0.4
-        with: 
-          token: ${{secrets.GITHUB_TOKEN}}
+      - name: GitHub Security Report Action
+        uses: peter-murray/github-security-report-action@v2
+        with:
+          token: 
+            ${{secrets.GITHUB_TOKEN}}
