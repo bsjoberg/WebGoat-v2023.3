@@ -3,7 +3,10 @@ on:
     branches: 
       - main
 
-name: CodeQL and Dependabot Report Action
+
 jobs:
   generate-report:
-    uses: rsdmike/github-security-report-action@v3.0.4
+    runs-on: ubuntu-latest
+    steps:
+      - name: CodeQL and Dependabot Report Action
+        uses: rsdmike/github-security-report-action@v3.0.4
